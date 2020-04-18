@@ -1,1 +1,17 @@
-Members
+<h1>Members</h1>
+<table>
+<thead>
+    <tr>
+        <th>Actions</th>
+        <th>Name</th>
+    </tr>
+</thead>
+<tbody>   
+<%= for m <- @members do %>
+    <tr>
+        <td>Edit | Delete</td>
+        <td><%= m.name%></td>
+    </tr>
+<% end %>
+</tbody>
+</table>
